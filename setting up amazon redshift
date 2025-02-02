@@ -1,0 +1,5 @@
+1.4 Set Up Amazon Redshift
+Go to Redshift Console > Create Cluster.
+Choose dc2.large (750 free hours available for two months).
+Configure security groups to allow traffic from EC2.
+Create a database (e.g., log_analytics).
