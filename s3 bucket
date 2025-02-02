@@ -1,0 +1,6 @@
+1.1 Create an S3 Bucket
+Go to AWS S3 Console.
+Click Create Bucket.
+Name it (e.g., real-time-log-bucket).
+Enable versioning (optional).
+Keep default settings and create the bucket.
