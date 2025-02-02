@@ -1,0 +1,13 @@
+5. Loading Data into Amazon Redshift
+Use AWS Glue to create an ETL job:
+Go to AWS Glue Console > Create Job.
+Choose S3 as Source (processed_logs.csv from S3 bucket).
+Choose Redshift as Target.
+Use this SQL to create a Redshift table:
+
+CREATE TABLE log_data (
+    timestamp TIMESTAMP,
+    ip VARCHAR(50),
+    level VARCHAR(10),
+    message VARCHAR(255)
+);
