@@ -1,0 +1,5 @@
+Visualizing Data with Amazon QuickSight
+
+Go to QuickSight Console > Create Dataset.
+Select Redshift as the data source.
+Connect and visualize log trends using charts.
