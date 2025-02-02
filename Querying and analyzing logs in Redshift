@@ -1,0 +1,4 @@
+Use SQL to analyze logs:
+
+SELECT level, COUNT(*) FROM log_data GROUP BY level;
+SELECT * FROM log_data WHERE level = 'ERROR' LIMIT 10;
