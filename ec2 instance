@@ -1,0 +1,6 @@
+1.2 Launch an EC2 Instance (for log generation & processing)
+Go to EC2 Console > Launch Instance.
+Choose Amazon Linux 2 as the OS.
+Select an instance type (t2.micro for free-tier users).
+Configure security group to allow SSH (port 22) and S3 access.
+Launch the instance and connect via SSH.
