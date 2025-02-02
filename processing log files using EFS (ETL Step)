@@ -1,0 +1,8 @@
+import pandas as pd
+
+def process_logs():
+    df = pd.read_csv("/mnt/efs/logs.txt", sep=" - ", header=None, names=["timestamp", "ip", "level", "message"])
+    df['timestamp'] = pd.to_datetime(df['timestamp'], unit='s')
+    df.to_csv("/mnt/efs/processed_logs.csv", index=False)
+
+process_logs()
