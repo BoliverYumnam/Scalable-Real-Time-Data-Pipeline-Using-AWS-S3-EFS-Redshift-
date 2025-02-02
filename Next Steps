@@ -1,0 +1,3 @@
+Automate the entire pipeline using Apache Airflow.
+Scale with AWS Kinesis for real-time log streaming.
+Add security features like IAM roles and encryption.
