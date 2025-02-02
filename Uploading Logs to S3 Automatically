@@ -1,0 +1,11 @@
+3. Uploading Logs to S3 Automatically
+Configure an AWS Lambda function to push new logs to S3:
+import boto3
+
+def upload_to_s3():
+    s3 = boto3.client('s3')
+    bucket_name = "real-time-log-bucket"
+    file_name = "/mnt/efs/logs.txt"
+    s3.upload_file(file_name, bucket_name, "processed_logs/logs.txt")
+
+upload_to_s3()
