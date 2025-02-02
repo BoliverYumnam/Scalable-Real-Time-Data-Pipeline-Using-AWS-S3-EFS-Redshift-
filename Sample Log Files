@@ -1,0 +1,13 @@
+import time
+import random
+from faker import Faker
+
+fake = Faker()
+
+log_file = "/mnt/efs/logs.txt"  # Ensure EFS is mounted
+
+with open(log_file, "a") as f:
+    for _ in range(1000):
+        log_entry = f"{time.time()} - {fake.ipv4()} - {random.choice(['INFO', 'WARNING', 'ERROR'])} - {fake.sentence()}\n"
+        f.write(log_entry)
+        time.sleep(0.1)  # Simulate real-time logging
